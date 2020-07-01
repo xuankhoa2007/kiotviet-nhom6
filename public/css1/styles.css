@@ -1,0 +1,58 @@
+*{
+	margin:0;
+	padding:0;
+}
+.dropdown-content{
+
+	display: none;
+	position: absolute;
+	z-index: 1;
+	border-radius: 3px;
+	background-color: #3399ff;
+	width: 240px
+	
+}
+.dropdown{
+	position: relative;
+	display: inline-block;
+	border-radius: 3px;
+	color: white;
+
+}
+.dropdown:hover .dropdown-content{
+	display: block;
+
+}
+
+.dropdown-menu{
+
+	display: none;
+	position: absolute;
+	z-index: 1;
+	border-radius: 3px;
+	width: 240px
+	
+}
+.dropdown{
+	position: relative;
+	display: inline-block;
+	border-radius: 3px;
+
+}
+.dropdown:hover .dropdown-menu{
+	display: block;
+
+}
+#navtop{
+	margin-top: 7px;
+}
+
+#Import{
+	margin-left: 10px;
+}
+.modal-content{
+	margin-top: 65px;
+}
+#drop-menu{
+	margin-right: 20px
+}

@@ -33,33 +33,41 @@
                             <div class="row mb-4 px-3">
                                 <h6 class="mb-0 mr-4 mt-2">ĐĂNG KÍ</h6>
                             </div>
-                            <form>
+                            <form action="dangky" method="post" class="was-validated">
                                 <div class="form-group">
                                     <label class="mb-1">
                                         <h6 class="mb-0 text-sm">Họ và tên</h6>
                                     </label>
-                                    <input type="text" class="form-control" id="formGroupExampleInput"
-                                        placeholder="Nhập họ và tên">
+                                    <input type="text" minlength="5" maxlength="30" name="hovaten" class="form-control"
+                                        id="formGroupExampleInput" placeholder="Nhập họ và tên" required>
+                                    <div class="valid-feedback">Đúng.</div>
+                                    <div class="invalid-feedback">Tối thiểu 5 kí tự - tối đa 30 kí tự.</div>
                                 </div>
                                 <div class="row">
                                     <div class="col">
                                         <label class="mb-1">
                                             <h6 class="mb-0 text-sm">Số điện thoại</h6>
                                         </label>
-                                        <input type="text" class="form-control" placeholder="Nhập số điện thoại">
+                                        <input type="text" minlength="10" maxlength="10" class="form-control"
+                                            name="sodienthoai" placeholder="Nhập số điện thoại" required>
+                                        <div class="valid-feedback">Đúng.</div>
+                                        <div class="invalid-feedback">Đủ 10 kí tự.</div>
                                     </div>
                                     <div class="col">
                                         <label class="mb-1">
                                             <h6 class="mb-0 text-sm">Email</h6>
                                         </label>
-                                        <input type="text" class="form-control" placeholder="Email">
+                                        <input type="email" class="form-control" name="email" placeholder="Email"
+                                            required>
+                                        <div class="valid-feedback">Đúng.</div>
+                                        <div class="invalid-feedback">Đúng định dạng email.</div>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="mb-1">
                                         <h6 class="mb-0 text-sm">Chọn địa chỉ</h6>
                                     </label>
-                                    <select class="form-control" id="exampleFormControlSelect1">
+                                    <select class="form-control" name="diachi" id="exampleFormControlSelect1">
                                         <option>Đăk Lăk</option>
                                         <option>Hồ Chí Minh</option>
                                         <option>Đà Nẵng</option>
@@ -72,24 +80,32 @@
                                         <label class="mb-1">
                                             <h6 class="mb-0 text-sm">Tên đăng nhập</h6>
                                         </label>
-                                        <input type="text" class="form-control" placeholder="Nhập tên đăng nhập">
+                                        <input type="text" minlength="3" maxlength="20" class="form-control"
+                                            name="tendangnhap" placeholder="Nhập tên đăng nhập" required>
+                                        <div class="valid-feedback">Đúng.</div>
+                                        <div class="invalid-feedback">Tối thiểu 3 kí tự - tối đa 20 kí tự.</div>
                                     </div>
                                     <div class="col">
                                         <label class="mb-1">
                                             <h6 class="mb-0 text-sm">Mật khẩu</h6>
                                         </label>
-                                        <input type="text" class="form-control" placeholder="Nhập mật khẩu">
+                                        <input type="text" minlength="3" maxlength="20" class="form-control"
+                                            name="matkhau" placeholder="Nhập mật khẩu" required>
+                                        <div class="valid-feedback">Đúng.</div>
+                                        <div class="invalid-feedback">Tối thiểu 3 kí tự - tối đa 20 kí tự.</div>
                                     </div>
                                 </div>
-                                
+                                <br>
+                                <div class="row mb-3 px-3"> <button type="submit"
+                                        class="btn btn-success text-center">Đăng
+                                        ký</button> </div>
+                                <div class="row mb-4 px-3"> <small class="font-weight-bold">Bạn đã có tài khoản? <a
+                                            class="text-danger" href="dangnhap">Đăng nhập</a></small> </div>
                             </form>
-                            <br>
-                            
-                            <div class="row mb-3 px-3"> <button type="submit" class="btn btn-success text-center">Đăng
-                                    ký</button> </div>
-                            <div class="row mb-4 px-3"> <small class="font-weight-bold">Bạn đã có tài khoản? <a
-                                        class="text-danger" href="dangnhap">Đăng nhập</a></small> </div>
                         </div>
+
+
+
                     </div>
                 </div>
                 <div class="bg-success py-4">
